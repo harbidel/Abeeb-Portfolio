@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afolabi Abeeb — Data Scientist & Language AI Engineer</title>
+<meta name="description" content="Afolabi Abeeb — Data Scientist, Machine Learning Engineer & NLP Researcher specialising in speech and language AI for low-resource languages worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#F6F1E7;
+    --ivory-2:#EFE8D8;
+    --indigo:#1B2A4A;
+    --indigo-2:#2E4374;
+    --indigo-deep:#101A30;
+    --gold:#C99A3B;
+    --gold-soft:#E4C888;
+    --ink:#22201B;
+    --ink-muted:#69624F;
+    --line: rgba(27,42,74,0.14);
+    --radius: 2px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--ivory);
+    color:var(--ink);
+    font-family:'Work Sans', sans-serif;
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background:var(--gold-soft); color:var(--indigo-deep); }
+  a{ color:inherit; }
+  .mono{ font-family:'IBM Plex Mono', monospace; letter-spacing:0.02em; }
+  h1,h2,h3{ font-family:'Fraunces', serif; font-weight:500; margin:0; color:var(--indigo-deep); }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex; align-items:center; gap:10px;
+  }
+  .eyebrow::before{ content:""; width:22px; height:1px; background:var(--gold); display:inline-block; }
+
+  .wrap{ max-width:1040px; margin:0 auto; padding:0 32px; }
+  section{ padding:96px 0; position:relative; }
+  section + section{ border-top:1px solid var(--line); }
+
+  /* subtle adire-inspired background pattern */
+  .adire-bg{
+    position:absolute; inset:0; opacity:0.05; pointer-events:none;
+    background-image:
+      repeating-linear-gradient(45deg, var(--indigo) 0, var(--indigo) 1.5px, transparent 1.5px, transparent 26px),
+      repeating-linear-gradient(-45deg, var(--indigo) 0, var(--indigo) 1.5px, transparent 1.5px, transparent 26px);
+  }
+
+  /* NAV */
+  nav{
+    position:sticky; top:0; z-index:50;
+    backdrop-filter:blur(10px);
+    background:rgba(246,241,231,0.86);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content:space-between; padding:18px 32px; }
+  .brand{ font-family:'Fraunces', serif; font-weight:600; font-size:1.05rem; color:var(--indigo-deep); }
+  .brand span{ color:var(--gold); }
+  .navlinks{ display:flex; gap:28px; font-size:0.85rem; }
+  .navlinks a{ text-decoration:none; color:var(--indigo); position:relative; }
+  .navlinks a:hover{ color:var(--gold); }
+  .navtoggle{ display:none; background:none; border:none; cursor:pointer; }
+
+  /* HERO */
+  .hero{
+    padding:120px 0 80px;
+    position:relative;
+    overflow:hidden;
+    background:linear-gradient(180deg, var(--indigo-deep) 0%, var(--indigo) 100%);
+    color:var(--ivory);
+  }
+  .hero .wrap{ position:relative; z-index:2; }
+  .hero-grid{ display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:center; }
+  .hero .eyebrow{ color:var(--gold-soft); }
+  .hero .eyebrow::before{ background:var(--gold-soft); }
+  .hero h1{
+    color:var(--ivory);
+    font-size:clamp(2.6rem, 5vw, 4.1rem);
+    line-height:1.05;
+    margin:18px 0 20px;
+  }
+  .hero h1 em{ font-style:italic; color:var(--gold-soft); font-weight:500; }
+  .hero p.lede{
+    max-width:52ch; color:rgba(246,241,231,0.78); font-size:1.08rem; font-weight:300;
+  }
+  .hero-actions{ display:flex; gap:14px; margin-top:34px; flex-wrap:wrap; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:13px 22px; border-radius:var(--radius);
+    font-size:0.85rem; text-decoration:none; font-weight:500;
+    border:1px solid transparent; transition:all .2s ease;
+  }
+  .btn-gold{ background:var(--gold); color:var(--indigo-deep); }
+  .btn-gold:hover{ background:var(--gold-soft); }
+  .btn-ghost{ border-color:rgba(246,241,231,0.35); color:var(--ivory); }
+  .btn-ghost:hover{ border-color:var(--gold-soft); color:var(--gold-soft); }
+
+  /* WAVEFORM signature */
+  .waveform-card{
+    background:rgba(246,241,231,0.05);
+    border:1px solid rgba(246,241,231,0.14);
+    border-radius:4px;
+    padding:28px 24px 22px;
+  }
+  .wf-bars{
+    display:flex; align-items:flex-end; gap:4px; height:120px; margin-bottom:18px;
+  }
+  .wf-bars span{
+    flex:1; background:linear-gradient(180deg, var(--gold-soft), var(--gold));
+    border-radius:2px 2px 0 0;
+    animation:wf 1.6s ease-in-out infinite;
+    opacity:0.9;
+  }
+  @keyframes wf{
+    0%,100%{ transform:scaleY(0.25); }
+    50%{ transform:scaleY(1); }
+  }
+  .wf-bars span{ transform-origin:bottom; }
+  .wf-label{
+    font-size:0.72rem; color:rgba(246,241,231,0.55);
+    display:flex; justify-content:space-between; align-items:baseline;
+  }
+  #wf-lang{ color:var(--gold-soft); font-weight:500; transition:opacity .3s ease; }
+
+  /* SECTION HEADERS */
+  .sec-head{ margin-bottom:48px; max-width:60ch; }
+  .sec-head h2{ font-size:2rem; margin-top:14px; }
+
+  /* ABOUT */
+  .about-body p{ font-size:1.02rem; color:#39352C; max-width:70ch; }
+  .about-body p + p{ margin-top:16px; }
+
+  /* SKILLS */
+  .skill-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:28px 40px; }
+  .skill-group h3{ font-size:1rem; color:var(--indigo); margin-bottom:12px; font-family:'Work Sans',sans-serif; font-weight:600; }
+  .skill-tags{ display:flex; flex-wrap:wrap; gap:8px; }
+  .skill-tags span{
+    font-family:'IBM Plex Mono', monospace; font-size:0.74rem;
+    padding:6px 10px; border:1px solid var(--line); border-radius:2px;
+    color:var(--indigo); background:var(--ivory-2);
+  }
+
+  /* TIMELINE */
+  .timeline{ position:relative; padding-left:28px; }
+  .timeline::before{
+    content:""; position:absolute; left:5px; top:6px; bottom:6px; width:1px;
+    background:var(--line);
+  }
+  .tl-item{ position:relative; padding-bottom:44px; }
+  .tl-item:last-child{ padding-bottom:0; }
+  .tl-item::before{
+    content:""; position:absolute; left:-28px; top:6px; width:9px; height:9px;
+    border-radius:50%; background:var(--gold); border:2px solid var(--ivory); outline:1px solid var(--indigo-2);
+  }
+  .tl-date{ font-size:0.72rem; color:var(--gold); margin-bottom:6px; display:block; }
+  .tl-item h3{ font-size:1.12rem; font-weight:600; font-family:'Work Sans',sans-serif; color:var(--indigo-deep); }
+  .tl-item .tl-org{ color:var(--ink-muted); font-size:0.92rem; margin-bottom:10px; display:block; }
+  .tl-item ul{ margin:0; padding-left:18px; color:#39352C; font-size:0.95rem; }
+  .tl-item ul li + li{ margin-top:6px; }
+  .tl-item.compact ul{ display:none; }
+
+  /* PUBLICATIONS */
+  .pub-list{ display:flex; flex-direction:column; gap:0; }
+  .pub{
+    display:grid; grid-template-columns:90px 1fr; gap:20px;
+    padding:22px 0; border-top:1px solid var(--line);
+  }
+  .pub:last-child{ border-bottom:1px solid var(--line); }
+  .pub-year{ font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:0.85rem; }
+  .pub h3{ font-size:1.02rem; font-family:'Work Sans',sans-serif; font-weight:600; margin-bottom:4px; }
+  .pub p{ margin:0; color:var(--ink-muted); font-size:0.9rem; }
+
+  /* AWARDS */
+  .award-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+  .award{
+    border:1px solid var(--line); padding:22px; border-radius:2px; background:var(--ivory-2);
+  }
+  .award .yr{ font-family:'IBM Plex Mono',monospace; font-size:0.72rem; color:var(--gold); }
+  .award h3{ font-size:1rem; font-family:'Work Sans',sans-serif; font-weight:600; margin:8px 0 6px; }
+  .award p{ font-size:0.88rem; color:var(--ink-muted); margin:0; }
+
+  /* SPEAKING */
+  .speak-grid{ display:grid; grid-template-columns:1fr 1fr; gap:12px 32px; }
+  .speak-row{ display:flex; justify-content:space-between; gap:16px; padding:12px 0; border-top:1px solid var(--line); font-size:0.92rem; }
+  .speak-row .yr{ font-family:'IBM Plex Mono',monospace; color:var(--gold); font-size:0.78rem; white-space:nowrap; }
+
+  /* CONTACT / FOOTER */
+  footer{
+    background:var(--indigo-deep); color:var(--ivory); padding:80px 0 40px; position:relative; overflow:hidden;
+  }
+  footer .wrap{ position:relative; z-index:2; }
+  footer h2{ color:var(--ivory); font-size:2.4rem; max-width:14ch; }
+  .contact-links{ display:flex; flex-wrap:wrap; gap:16px; margin-top:32px; }
+  .contact-links a{
+    text-decoration:none; padding:13px 20px; border:1px solid rgba(246,241,231,0.25);
+    border-radius:2px; font-size:0.88rem; display:inline-flex; align-items:center; gap:8px;
+    transition:all .2s ease;
+  }
+  .contact-links a:hover{ border-color:var(--gold-soft); color:var(--gold-soft); }
+  .foot-bottom{
+    margin-top:64px; padding-top:24px; border-top:1px solid rgba(246,241,231,0.14);
+    display:flex; justify-content:space-between; font-size:0.78rem; color:rgba(246,241,231,0.5);
+    flex-wrap:wrap; gap:10px;
+  }
+
+  @media (max-width: 860px){
+    .hero-grid{ grid-template-columns:1fr; }
+    .skill-grid, .award-grid, .speak-grid{ grid-template-columns:1fr; }
+    .navlinks{ display:none; }
+    section{ padding:64px 0; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .wf-bars span{ animation:none; transform:scaleY(0.7); }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand" id="brandName">Afolabi Abeeb<span>.</span></div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="adire-bg"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow" id="heroEyebrow"></div>
+        <h1 id="heroHeadline"></h1>
+        <p class="lede" id="heroLede"></p>
+        <div class="hero-actions" id="heroActions"></div>
+      </div>
+      <div class="waveform-card">
+        <div class="wf-bars" id="wfBars"></div>
+        <div class="wf-label">
+          <span class="mono" id="wfCaption"></span>
+          <span id="wf-lang" class="mono"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" id="aboutEyebrow"></div>
+      <h2 id="aboutHeading"></h2>
+    </div>
+    <div class="about-body" id="aboutBody"></div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Experience</div>
+      <h2>Career timeline</h2>
+    </div>
+    <div class="timeline" id="experienceTimeline"></div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Research &amp; Publications</div>
+      <h2>Papers &amp; posters</h2>
+    </div>
+    <div class="pub-list" id="pubList"></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Tools of the trade</h2>
+    </div>
+    <div class="skill-grid" id="skillGrid"></div>
+  </div>
+</section>
+
+<section id="speaking">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Speaking &amp; Community</div>
+      <h2>Selected talks</h2>
+    </div>
+    <div class="speak-grid" id="speakGrid"></div>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Honors &amp; Awards</div>
+      <h2>Recognition</h2>
+    </div>
+    <div class="award-grid" id="awardGrid"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Education</div>
+      <h2>Academic background</h2>
+    </div>
+    <div class="timeline" id="eduTimeline"></div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="adire-bg" style="opacity:0.06;"></div>
+  <div class="wrap">
+    <div class="eyebrow">Contact</div>
+    <h2 id="footerHeading"></h2>
+    <div class="contact-links" id="contactLinks"></div>
+    <div class="foot-bottom">
+      <span id="footerLocation"></span>
+      <span id="footerTag"></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+async function loadContent(){
+  let data;
+  try{
+    const res = await fetch('content.json');
+    data = await res.json();
+  }catch(e){
+    document.body.innerHTML = '<p style="padding:40px;font-family:sans-serif;">Could not load content.json — make sure it sits next to index.html and the site is served over http(s), not opened directly as a file.</p>';
+    console.error(e);
+    return;
+  }
+
+  const esc = s => (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+
+  // Brand
+  document.getElementById('brandName').innerHTML = esc(data.brand) + '<span>.</span>';
+  document.title = data.brand + ' — Portfolio';
+
+  // Hero
+  const h = data.hero;
+  document.getElementById('heroEyebrow').textContent = h.eyebrow;
+  document.getElementById('heroHeadline').innerHTML = esc(h.headline_pre) + '<em>' + esc(h.headline_em) + '</em>' + esc(h.headline_post);
+  document.getElementById('heroLede').textContent = h.lede;
+  document.getElementById('heroActions').innerHTML = `
+    <a class="btn btn-gold" href="mailto:${h.email}">Get in touch</a>
+    <a class="btn btn-ghost" href="${h.github}" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn btn-ghost" href="${h.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+  `;
+  document.getElementById('wfCaption').textContent = h.waveform_caption;
+
+  // Waveform bars
+  const bars = document.getElementById('wfBars');
+  for(let i=0;i<28;i++){
+    const b = document.createElement('span');
+    b.style.animationDelay = (Math.random()*1.4).toFixed(2)+'s';
+    b.style.height = (30 + Math.random()*70)+'%';
+    bars.appendChild(b);
+  }
+  const langs = h.waveform_languages || ['English'];
+  let li = 0;
+  const langEl = document.getElementById('wf-lang');
+  langEl.textContent = langs[0];
+  setInterval(()=>{
+    langEl.style.opacity = 0;
+    setTimeout(()=>{
+      li = (li+1) % langs.length;
+      langEl.textContent = langs[li];
+      langEl.style.opacity = 1;
+    }, 300);
+  }, 2200);
+
+  // About
+  document.getElementById('aboutEyebrow').textContent = data.about.eyebrow;
+  document.getElementById('aboutHeading').textContent = data.about.heading;
+  document.getElementById('aboutBody').innerHTML = data.about.paragraphs.map(p=>`<p>${esc(p)}</p>`).join('');
+
+  // Experience timeline
+  document.getElementById('experienceTimeline').innerHTML = data.experience.map(item => `
+    <div class="tl-item ${item.bullets.length ? '' : 'compact'}">
+      <span class="tl-date mono">${esc(item.date)}</span>
+      <h3>${esc(item.title)}</h3>
+      <span class="tl-org">${esc(item.org)}</span>
+      ${item.bullets.length ? '<ul>' + item.bullets.map(b=>`<li>${esc(b)}</li>`).join('') + '</ul>' : ''}
+    </div>
+  `).join('');
+
+  // Publications
+  document.getElementById('pubList').innerHTML = data.publications.map(p => `
+    <div class="pub">
+      <span class="pub-year mono">${esc(p.year)}</span>
+      <div>
+        <h3>${esc(p.title)}</h3>
+        <p>${esc(p.venue)}</p>
+      </div>
+    </div>
+  `).join('');
+
+  // Skills
+  document.getElementById('skillGrid').innerHTML = data.skills.map(s => `
+    <div class="skill-group">
+      <h3>${esc(s.group)}</h3>
+      <div class="skill-tags">${s.tags.map(t=>`<span>${esc(t)}</span>`).join('')}</div>
+    </div>
+  `).join('');
+
+  // Speaking
+  document.getElementById('speakGrid').innerHTML = data.speaking.map(s => `
+    <div class="speak-row"><span>${esc(s.title)}</span><span class="yr">${esc(s.year)}</span></div>
+  `).join('');
+
+  // Awards
+  document.getElementById('awardGrid').innerHTML = data.awards.map(a => `
+    <div class="award">
+      <span class="yr mono">${esc(a.year)}</span>
+      <h3>${esc(a.title)}</h3>
+      <p>${esc(a.desc)}</p>
+    </div>
+  `).join('');
+
+  // Education
+  document.getElementById('eduTimeline').innerHTML = data.education.map(e => `
+    <div class="tl-item compact">
+      <span class="tl-date mono">${esc(e.date)}</span>
+      <h3>${esc(e.title)}</h3>
+      <span class="tl-org">${esc(e.org)}</span>
+    </div>
+  `).join('');
+
+  // Footer
+  document.getElementById('footerHeading').textContent = data.footer.heading;
+  document.getElementById('footerLocation').textContent = data.footer.location;
+  document.getElementById('footerTag').textContent = data.footer.tag;
+  document.getElementById('contactLinks').innerHTML = `
+    <a href="mailto:${h.email}">${h.email}</a>
+    <a href="tel:${h.phone}">${h.phone}</a>
+    <a href="${h.linkedin}" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a href="${h.github}" target="_blank" rel="noopener">GitHub ↗</a>
+  `;
+}
+loadContent();
+</script>
+
+</body>
+</html>

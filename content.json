@@ -1,0 +1,147 @@
+{
+  "brand": "Afolabi Abeeb",
+  "hero": {
+    "eyebrow": "Data Science, Language AI & Speech Engineering",
+    "headline_pre": "Building machines that ",
+    "headline_em": "understand",
+    "headline_post": " the world's languages.",
+    "lede": "I'm Afolabi Abeeb — a data scientist, machine learning engineer, and NLP researcher based in Ibadan, Nigeria, working across ASR, TTS, and machine translation for low-resource languages worldwide, from research prototype to production.",
+    "email": "habeebadebayo422@gmail.com",
+    "phone": "+2348143735719",
+    "github": "https://github.com/harbidel",
+    "linkedin": "https://www.linkedin.com/in/abeeb-afolabi-b07a75135/",
+    "waveform_languages": ["Yorùbá", "Igbo", "Hausa", "Naija", "English"],
+    "waveform_caption": "ASR // decoding"
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "From dataset to model to production pipeline",
+    "paragraphs": [
+      "I work at the intersection of data science and language AI: turning messy, real-world data into models people can actually use. I lead the Language AI division at Plotweaver AI, where I set research direction and product roadmaps for multilingual speech and language systems — live commentary translation, video dubbing, audiobook generation, subtitle translation, and speech-to-speech pipelines that run across 38+ languages in real time.",
+      "My research background is in end-to-end ASR for Nigerian Pidgin, one of many low-resource languages that remain underserved by mainstream AI. I contributed the first parallel dataset for the language and fine-tuned architectures like Wav2Vec2, QuartzNet, and Jasper to push word-error rates below existing baselines. That work — and related contributions to MasakhaNews and AfriCOMET — sits at NAACL, ICLR workshops, and Deep Learning Indaba, and reflects a broader interest in making AI work for every language, not just the handful with abundant data.",
+      "As a data scientist, I care about the full pipeline: sourcing and cleaning data, statistical modelling, feature engineering, and communicating findings clearly — before a model ever gets near production. I bring the same rigor to structured data problems as I do to speech and language, and I'm equally comfortable building a forecasting model, an NLP system, or a real-time translation pipeline."
+    ]
+  },
+  "experience": [
+    {
+      "date": "OCT 2025 — PRESENT",
+      "title": "Head of Language AI",
+      "org": "Plotweaver AI · Remote",
+      "bullets": [
+        "Define research strategy and product roadmap for multilingual speech & language technologies, with a focus on low-resource African languages.",
+        "Architected production AI media systems: live commentary translation, video dubbing, audiobook generation, subtitle translation, and speech-to-speech translation.",
+        "Directed real-time ASR + MT + TTS pipelines spanning 38+ languages.",
+        "Built and fine-tuned custom ASR, MT, and TTS models for under-resourced African languages; led data collection, annotation, and QA at scale.",
+        "Managed cross-functional teams of ML engineers, NLP researchers, linguists, and data specialists."
+      ]
+    },
+    {
+      "date": "JUL 2021 — PRESENT",
+      "title": "NLP Researcher / Engineer",
+      "org": "NigerianPidgin (research collective) · Remote",
+      "bullets": [
+        "Co-authored \"Nigerian Pidgin++: Towards End-to-End Training of an ASR System,\" presenting the first parallel dataset for the language.",
+        "Trained the first end-to-end ASR systems (QuartzNet, Jasper) for Nigerian Pidgin, and fine-tuned Wav2Vec2 variants, surpassing baseline word-error rates.",
+        "Open-sourced data and code to encourage further research."
+      ]
+    },
+    {
+      "date": "JAN — DEC 2024",
+      "title": "NVIDIA RAPIDS Trainer",
+      "org": "Andela Community · Remote",
+      "bullets": [
+        "Completed Andela's Train-a-Tutor program on NVIDIA RAPIDS; joined the trainer assessment team.",
+        "Trained hundreds of Andela Community members worldwide on GPU-accelerated data science.",
+        "Received the 2024 Passion Award for community contribution and impact."
+      ]
+    },
+    {
+      "date": "JUN 2018 — PRESENT",
+      "title": "Machine Learning Engineer & Data Scientist",
+      "org": "Freelance",
+      "bullets": []
+    },
+    {
+      "date": "MAR 2023 — JAN 2024",
+      "title": "Machine Learning Engineer",
+      "org": "USAF · Remote",
+      "bullets": [
+        "Designed and developed ML/deep learning systems end to end — from data representation and prototyping to deployment and retraining.",
+        "Researched and implemented ML algorithms, ran experiments, and extended existing ML libraries and frameworks."
+      ]
+    },
+    {
+      "date": "OCT 2021 — SEP 2022",
+      "title": "Data Scientist & Machine Learning Engineer",
+      "org": "CodeVillage LLC · Ilorin",
+      "bullets": [
+        "Built ML models and retraining pipelines for healthcare research, primarily in R.",
+        "Built a Variational Autoencoder with a custom reparameterisation-trick layer using Keras' functional API, combining encoder/decoder into a full VAE for synthetic image generation."
+      ]
+    },
+    {
+      "date": "JAN 2019 — JUL 2021",
+      "title": "Deep Learning Facilitator",
+      "org": "LAUTECH Data Science Community · Ogbomoso",
+      "bullets": []
+    },
+    {
+      "date": "JUN — NOV 2019",
+      "title": "Data Science Intern",
+      "org": "Soft Alliance · Lagos",
+      "bullets": []
+    }
+  ],
+  "publications": [
+    {
+      "year": "2025",
+      "title": "Towards End-to-End Training of an ASR System for Nigerian Pidgin",
+      "venue": "Deep Learning Indaba 2025 — paper & poster presentation, Rwanda. Recipient of the Publication and African Dataset Award."
+    },
+    {
+      "year": "2024",
+      "title": "AfriMTE and AfriCOMET: Enhancing COMET to Embrace Under-Resourced African Languages",
+      "venue": "NAACL 2024 Main Conference."
+    },
+    {
+      "year": "2023",
+      "title": "MasakhaNews: News Topic Classification for African Languages",
+      "venue": "AfricaNLP Workshop, ICLR 2023. Recipient of the Area Chair Award (Resources & Evaluation), IJCNLP-AACL 2023."
+    },
+    {
+      "year": "2022",
+      "title": "NigerianPidgin++: Towards End-to-End Training of an ASR System",
+      "venue": "Black in AI Workshop, NeurIPS 2022 — poster presentation."
+    }
+  ],
+  "skills": [
+    { "group": "Data Science & Analytics", "tags": ["Data Analysis", "Statistical Modelling", "Data Visualisation", "Research Methodology", "Feature Engineering"] },
+    { "group": "Speech & Language AI", "tags": ["ASR", "TTS", "Machine Translation", "Multilingual Systems", "Low-Resource Languages"] },
+    { "group": "NLP", "tags": ["LLMs", "Prompt Engineering", "RAG", "Text Classification", "Sentiment Analysis"] },
+    { "group": "ML & Deep Learning", "tags": ["Model Optimisation", "TensorFlow", "PyTorch", "Scikit-learn", "Hugging Face Transformers", "LangChain"] },
+    { "group": "Data & Compute", "tags": ["Python", "R", "SQL", "Pandas", "Apache Spark", "NVIDIA RAPIDS", "CUDA"] }
+  ],
+  "speaking": [
+    { "year": "2026", "title": "Data is Language Power: Curation, Annotation & Ownership in AI — UNILAG Indigenous Language Workshop 2.0" },
+    { "year": "2025", "title": "The Role of RAPIDS and GPU Acceleration in Empowering Nigerian Startups — Indaba X" },
+    { "year": "2024", "title": "Unleashing Data Science Potential with NVIDIA RAPIDS — PyCon Africa" },
+    { "year": "2024", "title": "Revolutionizing Data Processing with GPU Power — TensorFlow Ibadan Meetup" },
+    { "year": "2024", "title": "Onboarding to NVIDIA RAPIDS — Andela/NVIDIA Upskilling Program" },
+    { "year": "2024", "title": "Revolutionizing Data Processing with GPU Power — Indaba X" }
+  ],
+  "awards": [
+    { "year": "2025", "title": "Publication & African Dataset Award", "desc": "Deep Learning Indaba, for the Nigerian Pidgin ASR paper and dataset." },
+    { "year": "2024", "title": "Passion Award", "desc": "Andela Community — for contributions and community impact as an NVIDIA RAPIDS trainer." },
+    { "year": "2023", "title": "Area Chair Award — Resources & Evaluation", "desc": "IJCNLP-AACL 2023, for \"MasakhaNEWS: News Topic Classification for African Languages.\"" },
+    { "year": "2021", "title": "Junior AI Ambassador", "desc": "Global AI Hub — for contributions to educational programs, events, and community activities." }
+  ],
+  "education": [
+    { "date": "JAN 2024 — PRESENT", "title": "MTech, Computer Engineering", "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso" },
+    { "date": "JAN 2014 — JUN 2021", "title": "BTech, Computer Engineering", "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso" }
+  ],
+  "footer": {
+    "heading": "Let's build the next language system together.",
+    "location": "Afolabi Abeeb — Ibadan, Nigeria",
+    "tag": "Built for accessibility & multilingual AI"
+  }
+}
