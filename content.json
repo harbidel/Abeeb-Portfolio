@@ -5,28 +5,34 @@
     "headline_pre": "Building machines that ",
     "headline_em": "understand",
     "headline_post": " the world's languages.",
-    "lede": "I am Afolabi Abeeb — a data scientist, machine learning engineer, and NLP researcher from Ibadan, Nigeria, working across ASR, TTS, and machine translation for low-resource languages worldwide, from research prototype to production.",
+    "lede": "I'm Afolabi Abeeb — a data scientist, machine learning engineer, and NLP researcher based in Ibadan, Nigeria, working across ASR, TTS, and machine translation for low-resource languages worldwide, from research prototype to production.",
     "email": "habeebadebayo422@gmail.com",
     "phone": "+2348143735719",
     "github": "https://github.com/harbidel",
     "linkedin": "https://www.linkedin.com/in/abeeb-afolabi-b07a75135/",
-    "waveform_languages": ["Yorùbá", "Igbo", "Hausa", "Pidgin", "Swahili", "Amharic", "English"],
+    "waveform_languages": [
+      "Yorùbá",
+      "Igbo",
+      "Hausa",
+      "Naija",
+      "English"
+    ],
     "waveform_caption": "ASR // decoding"
   },
   "about": {
     "eyebrow": "About",
     "heading": "From dataset to model to production pipeline",
     "paragraphs": [
-      "I work at the intersection of data science and language AI: turning messy, real-world data into models people can actually use. I led the Language AI division at Plotweaver, where I set research direction and product roadmaps for multilingual speech and language systems — live commentary translation, video dubbing, audiobook generation, subtitle translation, and speech-to-speech pipelines that run across 38+ languages in real time.",
+      "I work at the intersection of data science and language AI: turning messy, real-world data into models people can actually use. I lead the Language AI division at Plotweaver AI, where I set research direction and product roadmaps for multilingual speech and language systems — live commentary translation, video dubbing, audiobook generation, subtitle translation, and speech-to-speech pipelines that run across 38+ languages in real time.",
       "My research background is in end-to-end ASR for Nigerian Pidgin, one of many low-resource languages that remain underserved by mainstream AI. I contributed the first parallel dataset for the language and fine-tuned architectures like Wav2Vec2, QuartzNet, and Jasper to push word-error rates below existing baselines. That work — and related contributions to MasakhaNews and AfriCOMET — sits at NAACL, ICLR workshops, and Deep Learning Indaba, and reflects a broader interest in making AI work for every language, not just the handful with abundant data.",
       "As a data scientist, I care about the full pipeline: sourcing and cleaning data, statistical modelling, feature engineering, and communicating findings clearly — before a model ever gets near production. I bring the same rigor to structured data problems as I do to speech and language, and I'm equally comfortable building a forecasting model, an NLP system, or a real-time translation pipeline."
     ]
   },
   "experience": [
     {
-      "date": "OCT 2025 — AUG 2026",
+      "date": "OCT 2025 — PRESENT",
       "title": "Head of Language AI",
-      "org": "Plotweaver · Remote",
+      "org": "Plotweaver AI · Remote",
       "bullets": [
         "Define research strategy and product roadmap for multilingual speech & language technologies, with a focus on low-resource African languages.",
         "Architected production AI media systems: live commentary translation, video dubbing, audiobook generation, subtitle translation, and speech-to-speech translation.",
@@ -115,33 +121,253 @@
     }
   ],
   "skills": [
-    { "group": "Data Science & Analytics", "tags": ["Data Analysis", "Statistical Modelling", "Data Visualisation", "Research Methodology", "Feature Engineering"] },
-    { "group": "Speech & Language AI", "tags": ["ASR", "TTS", "Machine Translation", "Multilingual Systems", "Low-Resource Languages"] },
-    { "group": "NLP", "tags": ["LLMs", "Prompt Engineering", "RAG", "Text Classification", "Sentiment Analysis"] },
-    { "group": "ML & Deep Learning", "tags": ["Model Optimisation", "TensorFlow", "PyTorch", "Scikit-learn", "Hugging Face Transformers", "LangChain"] },
-    { "group": "Data & Compute", "tags": ["Python", "R", "SQL", "Pandas", "Apache Spark", "NVIDIA RAPIDS", "CUDA"] }
+    {
+      "group": "Data Science & Analytics",
+      "tags": [
+        "Data Analysis",
+        "Statistical Modelling",
+        "Data Visualisation",
+        "Research Methodology",
+        "Feature Engineering"
+      ]
+    },
+    {
+      "group": "Speech & Language AI",
+      "tags": [
+        "ASR",
+        "TTS",
+        "Machine Translation",
+        "Multilingual Systems",
+        "Low-Resource Languages"
+      ]
+    },
+    {
+      "group": "NLP",
+      "tags": [
+        "LLMs",
+        "Prompt Engineering",
+        "RAG",
+        "Text Classification",
+        "Sentiment Analysis"
+      ]
+    },
+    {
+      "group": "ML & Deep Learning",
+      "tags": [
+        "Model Optimisation",
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-learn",
+        "Hugging Face Transformers",
+        "LangChain"
+      ]
+    },
+    {
+      "group": "Data & Compute",
+      "tags": [
+        "Python",
+        "R",
+        "SQL",
+        "Pandas",
+        "Apache Spark",
+        "NVIDIA RAPIDS",
+        "CUDA"
+      ]
+    }
   ],
   "speaking": [
-    { "year": "2026", "title": "Data is Language Power: Curation, Annotation & Ownership in AI — UNILAG Indigenous Language Workshop 2.0" },
-    { "year": "2025", "title": "The Role of RAPIDS and GPU Acceleration in Empowering Nigerian Startups — Indaba X" },
-    { "year": "2024", "title": "Unleashing Data Science Potential with NVIDIA RAPIDS — PyCon Africa" },
-    { "year": "2024", "title": "Revolutionizing Data Processing with GPU Power — TensorFlow Ibadan Meetup" },
-    { "year": "2024", "title": "Onboarding to NVIDIA RAPIDS — Andela/NVIDIA Upskilling Program" },
-    { "year": "2024", "title": "Revolutionizing Data Processing with GPU Power — Indaba X" }
+    {
+      "year": "2026",
+      "title": "Data is Language Power: Curation, Annotation & Ownership in AI — UNILAG Indigenous Language Workshop 2.0"
+    },
+    {
+      "year": "2025",
+      "title": "The Role of RAPIDS and GPU Acceleration in Empowering Nigerian Startups — Indaba X"
+    },
+    {
+      "year": "2024",
+      "title": "Unleashing Data Science Potential with NVIDIA RAPIDS — PyCon Africa"
+    },
+    {
+      "year": "2024",
+      "title": "Revolutionizing Data Processing with GPU Power — TensorFlow Ibadan Meetup"
+    },
+    {
+      "year": "2024",
+      "title": "Onboarding to NVIDIA RAPIDS — Andela/NVIDIA Upskilling Program"
+    },
+    {
+      "year": "2024",
+      "title": "Revolutionizing Data Processing with GPU Power — Indaba X"
+    }
   ],
   "awards": [
-    { "year": "2025", "title": "Publication & African Dataset Award", "desc": "Deep Learning Indaba, for the Nigerian Pidgin ASR paper and dataset." },
-    { "year": "2024", "title": "Passion Award", "desc": "Andela Community — for contributions and community impact as an NVIDIA RAPIDS trainer." },
-    { "year": "2023", "title": "Area Chair Award — Resources & Evaluation", "desc": "IJCNLP-AACL 2023, for \"MasakhaNEWS: News Topic Classification for African Languages.\"" },
-    { "year": "2021", "title": "Junior AI Ambassador", "desc": "Global AI Hub — for contributions to educational programs, events, and community activities." }
+    {
+      "year": "2025",
+      "title": "Publication & African Dataset Award",
+      "desc": "Deep Learning Indaba, for the Nigerian Pidgin ASR paper and dataset."
+    },
+    {
+      "year": "2024",
+      "title": "Passion Award",
+      "desc": "Andela Community — for contributions and community impact as an NVIDIA RAPIDS trainer."
+    },
+    {
+      "year": "2023",
+      "title": "Area Chair Award — Resources & Evaluation",
+      "desc": "IJCNLP-AACL 2023, for \"MasakhaNEWS: News Topic Classification for African Languages.\""
+    },
+    {
+      "year": "2021",
+      "title": "Junior AI Ambassador",
+      "desc": "Global AI Hub — for contributions to educational programs, events, and community activities."
+    }
   ],
   "education": [
-    { "date": "JAN 2024 — PRESENT", "title": "MTech, Computer Engineering", "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso" },
-    { "date": "JAN 2014 — JUN 2021", "title": "BTech, Computer Engineering", "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso" }
+    {
+      "date": "JAN 2024 — PRESENT",
+      "title": "MTech, Computer Engineering",
+      "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso"
+    },
+    {
+      "date": "JAN 2014 — JUN 2021",
+      "title": "BTech, Computer Engineering",
+      "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso"
+    }
   ],
   "footer": {
     "heading": "Let's build the next language system together.",
     "location": "Afolabi Abeeb — Ibadan, Nigeria",
     "tag": "Built for accessibility & multilingual AI"
+  },
+  "projects": [
+    {
+      "type": "Space",
+      "title": "NaijaSpeech",
+      "desc": "Yoruba, Hausa and Igbo speech, in their own words. A live demo of speech recognition for Nigeria's major languages.",
+      "url": "https://huggingface.co/spaces/Harbidel/NaijaSpeech",
+      "tags": [
+        "ASR",
+        "Yoruba",
+        "Hausa",
+        "Igbo"
+      ]
+    },
+    {
+      "type": "Model",
+      "title": "yoruba-hausa-igbo-xls-r-300m-ctc",
+      "desc": "A 0.3B-parameter automatic speech recognition model covering Yoruba, Hausa and Igbo, built on XLS-R with a CTC head.",
+      "url": "https://huggingface.co/Harbidel/yoruba-hausa-igbo-xls-r-300m-ctc",
+      "tags": [
+        "ASR",
+        "XLS-R",
+        "CTC"
+      ]
+    },
+    {
+      "type": "Dataset",
+      "title": "yoruba-hausa-igbo-asr",
+      "desc": "A multilingual speech dataset for training and evaluating ASR systems in Yoruba, Hausa and Igbo.",
+      "url": "https://huggingface.co/datasets/Harbidel/yoruba-hausa-igbo-asr",
+      "tags": [
+        "Speech data",
+        "Low-resource"
+      ]
+    },
+    {
+      "type": "Space",
+      "title": "FieldSabi Research Pilot",
+      "desc": "Farming advice from spoken or typed questions, bringing agricultural guidance to people through voice.",
+      "url": "https://huggingface.co/spaces/Harbidel/FieldSabi",
+      "tags": [
+        "Voice AI",
+        "Agriculture"
+      ]
+    },
+    {
+      "type": "Space",
+      "title": "Voice Triage",
+      "desc": "Generates a clinical intake record and triage tier from speech, a prototype for voice-first healthcare intake.",
+      "url": "https://huggingface.co/spaces/Harbidel/Voice-Triage",
+      "tags": [
+        "Speech",
+        "Healthcare"
+      ]
+    },
+    {
+      "type": "Space",
+      "title": "Object Counter",
+      "desc": "Count any object in an image by typing what to look for.",
+      "url": "https://huggingface.co/spaces/Harbidel/Object_Counter",
+      "tags": [
+        "Computer vision"
+      ]
+    },
+    {
+      "type": "Space",
+      "title": "Pidgin Cartoon Generator",
+      "desc": "Generate cartoon images from Nigerian Pidgin prompts, powered by a custom-trained LoRA.",
+      "url": "https://huggingface.co/spaces/Harbidel/pidgin-cartoon-generator",
+      "tags": [
+        "Generative AI",
+        "Nigerian Pidgin"
+      ]
+    },
+    {
+      "type": "Model",
+      "title": "pidgin-cartoon-lora",
+      "desc": "LoRA adapter behind the Pidgin Cartoon Generator.",
+      "url": "https://huggingface.co/Harbidel/pidgin-cartoon-lora",
+      "tags": [
+        "LoRA",
+        "Image generation"
+      ]
+    },
+    {
+      "type": "Model",
+      "title": "sarcasm-bert",
+      "desc": "A 0.1B-parameter BERT-based text classifier for detecting sarcasm.",
+      "url": "https://huggingface.co/Harbidel/sarcasm-bert",
+      "tags": [
+        "NLP",
+        "Text classification"
+      ]
+    },
+    {
+      "type": "Dataset",
+      "title": "tigrinya-asr-merged",
+      "desc": "Merged Tigrinya speech recognition dataset for low-resource ASR research.",
+      "url": "https://huggingface.co/datasets/Harbidel/tigrinya-asr-merged",
+      "tags": [
+        "Tigrinya",
+        "Speech data"
+      ]
+    },
+    {
+      "type": "Dataset",
+      "title": "amharic-asr-merged",
+      "desc": "Merged Amharic speech recognition dataset for low-resource ASR research.",
+      "url": "https://huggingface.co/datasets/Harbidel/amharic-asr-merged",
+      "tags": [
+        "Amharic",
+        "Speech data"
+      ]
+    },
+    {
+      "type": "Dataset",
+      "title": "amharic-asr-llm-corrected",
+      "desc": "Amharic ASR transcripts refined with LLM-based correction.",
+      "url": "https://huggingface.co/datasets/Harbidel/amharic-asr-llm-corrected",
+      "tags": [
+        "Amharic",
+        "LLM correction"
+      ]
+    }
+  ],
+  "projects_meta": {
+    "eyebrow": "Projects",
+    "heading": "Live demos, models & datasets",
+    "profile_label": "See everything on Hugging Face ↗",
+    "profile_url": "https://huggingface.co/Harbidel"
   }
 }

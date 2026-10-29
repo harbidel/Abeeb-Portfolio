@@ -183,6 +183,23 @@
   .pub h3{ font-size:1.02rem; font-family:'Work Sans',sans-serif; font-weight:600; margin-bottom:4px; }
   .pub p{ margin:0; color:var(--ink-muted); font-size:0.9rem; }
 
+
+  /* PROJECTS */
+  .proj-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .proj{
+    display:flex; flex-direction:column; gap:10px; text-decoration:none;
+    border:1px solid var(--line); background:var(--ivory-2); padding:22px; border-radius:2px;
+    transition:transform .2s ease, border-color .2s ease;
+  }
+  .proj:hover{ transform:translateY(-3px); border-color:var(--gold); }
+  .proj-type{ font-family:'IBM Plex Mono',monospace; font-size:0.7rem; letter-spacing:0.12em; text-transform:uppercase; color:var(--gold); }
+  .proj h3{ font-size:1.02rem; font-family:'Work Sans',sans-serif; font-weight:600; color:var(--indigo-deep); word-break:break-word; }
+  .proj p{ margin:0; font-size:0.88rem; color:var(--ink-muted); flex:1; }
+  .proj .skill-tags span{ font-size:0.68rem; padding:4px 8px; }
+  .proj-more{ margin-top:28px; }
+  .proj-more a{ font-size:0.9rem; color:var(--indigo); font-weight:500; }
+  .proj-more a:hover{ color:var(--gold); }
+
   /* AWARDS */
   .award-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
   .award{
@@ -218,7 +235,7 @@
 
   @media (max-width: 860px){
     .hero-grid{ grid-template-columns:1fr; }
-    .skill-grid, .award-grid, .speak-grid{ grid-template-columns:1fr; }
+    .skill-grid, .award-grid, .speak-grid, .proj-grid{ grid-template-columns:1fr; }
     .navlinks{ display:none; }
     section{ padding:64px 0; }
   }
@@ -235,6 +252,7 @@
     <div class="navlinks">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#research">Research</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
@@ -280,6 +298,17 @@
       <h2>Career timeline</h2>
     </div>
     <div class="timeline" id="experienceTimeline"></div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" id="projEyebrow"></div>
+      <h2 id="projHeading"></h2>
+    </div>
+    <div class="proj-grid" id="projGrid"></div>
+    <div class="proj-more" id="projMore"></div>
   </div>
 </section>
 
@@ -411,6 +440,24 @@ async function loadContent(){
       ${item.bullets.length ? '<ul>' + item.bullets.map(b=>`<li>${esc(b)}</li>`).join('') + '</ul>' : ''}
     </div>
   `).join('');
+
+  // Projects
+  if(data.projects){
+    const pm = data.projects_meta || {};
+    document.getElementById('projEyebrow').textContent = pm.eyebrow || 'Projects';
+    document.getElementById('projHeading').textContent = pm.heading || 'Selected projects';
+    document.getElementById('projGrid').innerHTML = data.projects.map(p => `
+      <a class="proj" href="${p.url}" target="_blank" rel="noopener">
+        <span class="proj-type">${esc(p.type)}</span>
+        <h3>${esc(p.title)}</h3>
+        <p>${esc(p.desc)}</p>
+        <div class="skill-tags">${(p.tags||[]).map(t=>`<span>${esc(t)}</span>`).join('')}</div>
+      </a>
+    `).join('');
+    if(pm.profile_url){
+      document.getElementById('projMore').innerHTML = `<a href="${pm.profile_url}" target="_blank" rel="noopener">${esc(pm.profile_label || 'See more')}</a>`;
+    }
+  }
 
   // Publications
   document.getElementById('pubList').innerHTML = data.publications.map(p => `
