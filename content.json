@@ -122,6 +122,18 @@
       "venue": "Black in AI Workshop, NeurIPS 2022 — poster presentation."
     }
   ],
+  "education": [
+    {
+      "date": "JAN 2024 — PRESENT",
+      "title": "MTech, Computer Engineering",
+      "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso"
+    },
+    {
+      "date": "JAN 2014 — JUN 2021",
+      "title": "BTech, Computer Engineering",
+      "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso"
+    }
+  ],
   "skills": [
     {
       "group": "Data Science & Analytics",
@@ -225,19 +237,7 @@
       "desc": "Global AI Hub — for contributions to educational programs, events, and community activities."
     }
   ],
-  "education": [
-    {
-      "date": "JAN 2024 — PRESENT",
-      "title": "MTech, Computer Engineering",
-      "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso"
-    },
-    {
-      "date": "JAN 2014 — JUN 2021",
-      "title": "BTech, Computer Engineering",
-      "org": "Ladoke Akintola University of Technology (LAUTECH), Ogbomoso"
-    }
-  ],
-  "footer": {
+    "footer": {
     "heading": "Let's build the next language system together.",
     "location": "Afolabi Abeeb — Ibadan, Nigeria",
     "tag": "Built for accessibility & multilingual AI"
